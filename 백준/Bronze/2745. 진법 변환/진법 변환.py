@@ -1,11 +1,11 @@
-N, b = input().split()
+n, b = input().split()
+
 ary = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-N = N[::-1]
-result = 0
+n_list = list(n.upper())
+total = 0 
 
-for i,n in enumerate(N):
-    result += (int(b)**i)*(ary.index(n))
-print(result)
+for index,char_ in enumerate(reversed(n_list)) :
+    total += int(b)**index * ary.index(char_)
 
-86846823611197163108337531226495015298096208677436155
+print(total)
