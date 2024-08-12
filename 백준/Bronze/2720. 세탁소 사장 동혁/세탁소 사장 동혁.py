@@ -1,7 +1,5 @@
 T = int(input())
 
-rest_list =[]
-
 for i in range(T) :
     rest_list =[]
     n = int(input())
