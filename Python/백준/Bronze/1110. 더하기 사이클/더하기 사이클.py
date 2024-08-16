@@ -1,15 +1,17 @@
-n = int(input()) #26
-num = n
-count = 0
+n = int(input())
+result,count = 0,0
+old_n = n
+new_n = 0
 
-while True:
-    a = num//10 #2
-    b = num%10 #6
-    c = (a+b)%10 #8
-    num = (b*10)+c #68
-    
-    count+=1
-    if(num==n):
-        break
+if n == 0 :
+    count = 1
+while(new_n != n) :
+    if old_n < 10 : 
+        result = 0+old_n
+    else :
+        result = (old_n//10) + (old_n%10)
+    new_n = (old_n%10) * 10 + (result%10)
+    count += 1
+    old_n=new_n
 
 print(count)
