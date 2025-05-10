@@ -1,0 +1,8 @@
+-- PRODUCT 테이블
+
+-- PRODUCT_ID: 상품 ID
+-- PRODUCT_CODE: 상품코드 
+-- PRICE: 판매가
+
+SELECT (MAX(PRICE)) AS MAX_PRICE
+FROM PRODUCT 
